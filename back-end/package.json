@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "heroku": "^7.42.13",
     "mongoose": "^5.10.3"
   }
 }
