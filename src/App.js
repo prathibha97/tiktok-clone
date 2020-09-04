@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
+import Video from './Video';
+import axios from './axios';
 
 function App() {
   return (
     <div className="App">
-      <h1>tiktok clone</h1>
+      <div className='app_videos'>
+        {}
+      </div>
     </div>
   );
 }
