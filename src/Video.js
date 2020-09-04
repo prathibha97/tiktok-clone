@@ -1,16 +1,21 @@
-import React, { useState } from "react";
-import VideoFooter from "./VideoFooter";
-import VideoSidebar from "./VideoSidebar";
+import React, { useRef, useState } from 'react';
 import './Video.css';
+import VideoFooter from './VideoFooter';
+import VideoSidebar from './VideoSidebar';
 
-function Video({ url, channel, description, likes, song, shares, messages }) {
-  const videoRef = useState(null);
+function Video({url,channel, description, likes, song, shares, messages}) {
+  const videoRef = useRef(null);
   const [playing, setPlaying] = useState(false);
   const handleVideoPress = () => {
+    // if video is playing
     if (playing) {
-      videoRef.current.puase();
+      // stop it
+      videoRef.current.pause();
       setPlaying(false);
-    } else {
+    }
+    // otherwise if not playing
+    else {
+      // play it
       videoRef.current.play();
       setPlaying(true);
     }
@@ -22,10 +27,9 @@ function Video({ url, channel, description, likes, song, shares, messages }) {
         className='video_player'
         loop
         ref={videoRef}
-        src={url}
-      ></video>
-      <VideoFooter/>
-      <VideoSidebar/>
+        src={url}></video>
+        <VideoFooter channel={channel} description={description} song={song}/>
+        <VideoSidebar likes={likes} shares={shares} messages={messages}/>
     </div>
   );
 }
