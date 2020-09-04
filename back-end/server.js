@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import Data from './data.js';
 
 // app config
 const app = express();
@@ -7,7 +8,7 @@ const port = process.env.PORT || 9000;
 
 // mongoose config
 const connection_url =
-  "mongodb+srv://admin:<password>@cluster0.cresq.mongodb.net/<dbname>?retryWrites=true&w=majority";
+  "mongodb+srv://admin:Rmpp213097@cluster0.cresq.mongodb.net/tiktok?retryWrites=true&w=majority";
 mongoose.connect(connection_url, {
   useCreateIndex: true,
   useNewUrlParser: true,
