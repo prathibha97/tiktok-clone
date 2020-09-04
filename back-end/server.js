@@ -9,7 +9,7 @@ const port = process.env.PORT || 9000;
 
 // mongoose config
 const connection_url =
-  "mongodb+srv://admin:Rmpp213097@cluster0.cresq.mongodb.net/tiktok?retryWrites=true&w=majority";
+  "mongodb+srv://admin:Evozt0lgjB1UbHMa@cluster0.cresq.mongodb.net/tiktok?retryWrites=true&w=majority";
 mongoose.connect(connection_url, {
   useCreateIndex: true,
   useNewUrlParser: true,
