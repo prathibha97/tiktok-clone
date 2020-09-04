@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
-import Data from './data.js';
+import Data from "./data.js";
+import Videos from "./dbModel.js";
 
 // app config
 const app = express();
@@ -17,12 +18,41 @@ mongoose.connect(connection_url, {
 
 // middleware
 app.use(express.json());
-app.use((req,res,next)=>{
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers', '*');
-    next();
-})
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Headers", "*");
+  next();
+});
 
+// api endpoints
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
+
+app.get("/v1/posts", (req, res) => {
+  res.send(Data);
+});
+
+app.get("/v2/posts", (req, res) => {
+  Videos.find({}, (err, data) => {
+    if (err) {
+      res.status(500).send(err);
+    } else {
+      res.status(201).send(data);
+    }
+  });
+});
+
+app.post("/v2/posts", (req, res) => {
+  const dbVideos = req.body;
+  Videos.create(dbVideos, (err, data) => {
+    if (err) {
+      res.status(500).send(err);
+    } else {
+      res.status(200).send(data);
+    }
+  });
+});
 
 // listen
 app.listen(port, () => {
