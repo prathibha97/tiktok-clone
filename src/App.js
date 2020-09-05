@@ -9,7 +9,7 @@ function App() {
     <div className='app'>
       <div className='app_videos'>
         <Video
-          url='https://v16m.tiktokcdn.com/b4ec1585942f781498e710fdc2ae9fb4/5f522157/video/tos/useast2a/tos-useast2a-ve-0068c004/4923f800761743e887c360bb25d23fb5/?a=1233&br=2986&bt=1493&cr=0&cs=0&cv=1&dr=0&ds=3&er=&l=2020090405131901023410514161004422&lr=tiktok_m&mime_type=video_mp4&qs=0&rc=MzduZmptc3J3dzMzNjczM0ApNWhmMzc7aWQ0N2RmZzMzZmcxLjZrZG5yZDRfLS00MTZzczBhNjMuNGAwNDUtNDYvM2M6Yw%3D%3D&vl=&vr='
+          url='https://v16m.tiktokcdn.com/ad20393f66402f2e3f108b212cfc0dc0/5f53e3e9/video/tos/useast2a/tos-useast2a-ve-0068c004/9c6accf20977468f962ba959077de6c6/?a=1233&br=2262&bt=1131&cr=0&cs=0&cv=1&dr=0&ds=3&er=&l=202009051315410101150402270B368F5E&lr=tiktok_m&mime_type=video_mp4&qs=0&rc=MzR1NzkzZXJmdzMzaTczM0ApNTU0ZzozOjw4Nzo4ZWQ0M2dyaGg0cWVtLTZfLS0tMTZzc2ExYC41NDJfYDMvMl8xMF86Yw%3D%3D&vl=&vr='
           channel='addisonre'
           description='Enjoy life!'
           song='99 problems and REACT aint one'
@@ -19,7 +19,7 @@ function App() {
         />
 
         <Video
-          url='https://v16m.tiktokcdn.com/02bc7d8555917e1dcfd5ad5f52757ff1/5f52215e/video/tos/useast2a/tos-useast2a-pve-0068/96ec57f6e9654159a05331e2286f22d2/?a=1233&br=2326&bt=1163&cr=0&cs=0&cv=1&dr=0&ds=3&er=&l=2020090405131901023410514161004422&lr=tiktok_m&mime_type=video_mp4&qs=0&rc=anRuNTU6eTt5dzMzNTczM0ApNGRpaDM4ZDs8N2g8MzNkM2dvcHFfamJhMTRfLS0uMTZzc2M1LWE1NV8zYDQ0LTAvMGI6Yw%3D%3D&vl=&vr='
+          url='https://v16m.tiktokcdn.com/7384bb7e5c70e20a82cce16a252701d2/5f53e3b4/video/tos/useast2a/tos-useast2a-pve-0068/14c5096a19ae4ab8890fcd45f52be2fe/?a=1233&br=3424&bt=1712&cr=0&cs=0&cv=1&dr=0&ds=3&er=&l=202009051314490101150402270B36726A&lr=tiktok_m&mime_type=video_mp4&qs=0&rc=anY6ZzlmOnJodzMzOjczM0ApOjxpNWRlN2U4Nzw4M2c8O2dlY3JvNmVjMTZfLS01MTZzczMyLWM2MDAxM2BeMmAvNS86Yw%3D%3D&vl=&vr='
           channel='addisonre'
           description='Enjoy life!'
           song='99 problems and REACT aint one'

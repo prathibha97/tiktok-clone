@@ -9,7 +9,7 @@ const port = process.env.PORT || 9000;
 
 // mongoose config
 const connection_url =
-  "mongodb+srv://admin:Evozt0lgjB1UbHMa@cluster0.cresq.mongodb.net/tiktok?retryWrites=true&w=majority";
+  "mongodb+srv://admin:O1ovowmvmyahE421@cluster0.cresq.mongodb.net/tiktok?retryWrites=true&w=majority";
 mongoose.connect(connection_url, {
   useCreateIndex: true,
   useNewUrlParser: true,
@@ -58,3 +58,4 @@ app.post("/v2/posts", (req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
